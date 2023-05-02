@@ -91,7 +91,7 @@
   <h1>Resultados</h1>
     <p class="interlineado">
 
-      <h3>¿Realmente es alta la criminalidad en Andalucía en comparación con el resto de España?</h3>
+      <h2>¿Realmente es alta la criminalidad en Andalucía en comparación con el resto de España?</h2>
 
       <br /> 
 
@@ -125,7 +125,7 @@
 
       <br /><br />
 
-      <h3>¿Cuál es la tipología de delitos que más incidencia tiene?</h3>
+      <h2>¿Cuál es la tipología de delitos que más incidencia tiene?</h2>
 
       <br />
 
@@ -142,7 +142,7 @@
 
       <br /><br />
 
-      <h3>¿Cómo ha evolucionado la criminalidad en los últimos años?</h3>
+      <h2>¿Cómo ha evolucionado la criminalidad en los últimos años?</h2>
 
       <br /> 
       Si queremos visualizar la evolución de la criminalidad en Andalucía, un gráfico de líneas es el más adecuado para graficar una serie de tiempo. Haciendo uso de Matplotlib obtenemos:
@@ -159,7 +159,7 @@
 
       <h3>¿Han aumentado los delitos contra la libertad sexual?<br></h3>
       <br />
-      Gráficando de nuevo con Python la serie de tiempo para este caso obtenemos el siguiente resultado:
+      Se ha optado por visualizar esta serie de tiempo en una gráfica independiente, para no tergiversar el resultado por la gran diferencia entre los valores de criminalidad para los delitos contra el patrimonio en comparación con los delitos de caracter sexual. Gráficando de nuevo con Python la serie de tiempo para este caso obtenemos el siguiente resultado:
 
       <br /><br />
 
@@ -169,13 +169,14 @@
       Podemos decir, que al contrario que en el caso anterior, los delitos contra la libertad sexual tuvieron una tendencia al alza hasta 2019, cayendo drásticamente en 2020 durante el confinamiento, pero para 2021 el crecimiento se retomó de forma muy pronunciada.
       <br /><br />
 
-      <h3>¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?</h3>
+      <h2>¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?</h2>
       
       <br />
 
-      Cabría preguntarse si alguna tasa como el PIB per cápita está correlacionado con la criminalidad. La forma más apropiada de responder a esta pregunta mediante una visualización es con un diagrama de puntos. De nuevo, Datawrapper permite hacerlo de forma muy sencilla. <br />
+      Cabría preguntarse si alguna tasa como el PIB per cápita está correlacionado con la criminalidad. La forma más apropiada de responder a esta pregunta mediante una visualización es con un diagrama de puntos. De nuevo, Datawrapper permite hacerlo de forma muy sencilla. <br /><br /> 
 
       Si graficamos la tasa de delitos por cada 1000 habitantes, que para Andalucía se sitúa en alrededor de 37 delitos, frente al PIB per cápita de cada región, obtenemos:
+      <br /> <br /> 
 
       <iframe title="Delitos por cada 1000 hab. vs PIB per Cápita - 2021" aria-label="Scatter Plot" id="datawrapper-chart-ifEl5" src="https://datawrapper.dwcdn.net/ifEl5/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
       </script>
@@ -183,11 +184,14 @@
       <br /><br />
 
       Vemos que no se detecta una correlación lineal entre ambas tasas, regiones como Extremadura o Melilla con PIB per cápita similares a los de Andalucía, tienen tasas de criminalidad en sendos extremos. Y lo mismo se puede decir de Cataluña, Navarra y Aragón, con PIB per cápita en la zona media-alta, tienen unas tasas de criminalidad por cada 1000 habitantes muy dispares.
-      
-       
+             
   </p>
 
-  <br>
+  <br><br>
   <h1>Conclusiones</h1>
-
+   <p class="interlineado"><br>
+    Como hemos podido comprobar, con unas gráficas sencillas se pueden dar respuesta basadas en datos a cuestiones de preocupación social. Es importante, no obstante, tener cuidado y evitar el sesgo por la utilización de escalas inadecuadas, unidades incorrectas o valores absolutos en lugar de relativos.
+    <br /> 
+    Hay que destacar la facilidad de uso de Datawrapper, que ofrece además visualizaciones atractivas muy rápidas de construir. Por otro lado, Python, con la multitud de librerías disponibles, ofrece muchas opciones para el fine-tunning de las visualizaciones, lo que puede requerir  tiempo para construir la visualizacion con las opciones deseadas, pero da mucho control sobre el proceso.
+  </p>
 </div>
