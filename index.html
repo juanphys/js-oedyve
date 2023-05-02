@@ -141,18 +141,48 @@
       Como vemos, de lejos, los delitos contra el patrimonio, lo que incluye hurtos, robos o robos con violencia de diversa índole, es la categoría de infracción penal que más se denuncia en Andalucia, con más de 210 mil casos reportados en 2021.
 
       <br /><br />
+
+      <h3>¿Cómo ha evolucionado la criminalidad en los últimos años?</h3>
+
+      <br /> 
+      Si queremos visualizar la evolución de la criminalidad en Andalucía, un gráfico de líneas es el más adecuado para graficar una serie de tiempo. Haciendo uso de Matplotlib obtenemos:
+      <br /><br />
+
       <img src="https://raw.githubusercontent.com/juanphys/js-oedyve/main/SeriesT.jpg" alt="serie">
       <br /><br />
 
+      Como se ve, de 2010 a 2019 hubo una tendencia a la baja tanto para los delitos contra el patrimonio, como para todas las tipologías en su conjunto. Se ve que, en 2020 como efecto del confinamiento hubo una caída drástica, pero desde entonces ha aumentado de nuevo la criminalidad con una subida pronunciada. <br />
+
+      Cabría pensan que la criminalidad empezó a situarse en 2021 en los niveles anteriores a la pandemia. ¿Se tendrá el mismo comportamiento para los delitos contra la libertad sexual? 
+      
       <br /><br />
+
+      <h3>¿Han aumentado los delitos contra la libertad sexual?<br></h3>
+      <br />
+      Gráficando de nuevo con Python la serie de tiempo para este caso obtenemos el siguiente resultado:
+
+      <br /><br />
+
       <img src="https://raw.githubusercontent.com/juanphys/js-oedyve/main/libertad.jpg" alt="libertad">
       <br /><br />
 
+      Podemos decir, que al contrario que en el caso anterior, los delitos contra la libertad sexual tuvieron una tendencia al alza hasta 2019, cayendo drásticamente en 2020 durante el confinamiento, pero para 2021 el crecimiento se retomó de forma muy pronunciada.
+      <br /><br />
+
+      <h3>¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?</h3>
+      
+      <br />
+
+      Cabría preguntarse si alguna tasa como el PIB per cápita está correlacionado con la criminalidad. La forma más apropiada de responder a esta pregunta mediante una visualización es con un diagrama de puntos. De nuevo, Datawrapper permite hacerlo de forma muy sencilla. <br />
+
+      Si graficamos la tasa de delitos por cada 1000 habitantes, que para Andalucía se sitúa en alrededor de 37 delitos, frente al PIB per cápita de cada región, obtenemos:
 
       <iframe title="Delitos por cada 1000 hab. vs PIB per Cápita - 2021" aria-label="Scatter Plot" id="datawrapper-chart-ifEl5" src="https://datawrapper.dwcdn.net/ifEl5/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
       </script>
 
+      <br /><br />
 
+      Vemos que no se detecta una correlación lineal entre ambas tasas, regiones como Extremadura o Melilla con PIB per cápita similares a los de Andalucía, tienen tasas de criminalidad en sendos extremos. Y lo mismo se puede decir de Cataluña, Navarra y Aragón, con PIB per cápita en la zona media-alta, tienen unas tasas de criminalidad por cada 1000 habitantes muy dispares.
       
        
   </p>
