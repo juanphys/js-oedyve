@@ -62,11 +62,11 @@
         En este trabajo nos planteamos responder a una serie de cuestiones en lo que respecta a la tasa de criminalidad en Andalucía:<br><br>
 
         - ¿Realmente es alta la criminalidad en Andalucía en comparación con el resto de España?<br><br>
-        - ¿Cuál es la tipología de delitos que más incidencia tiene?<br><br>
-        - ¿Cómo ha evolucionado la criminalidad en los últimos años? <br><br>
+        - ¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región? <br><br>
+        - ¿Cuál es la tipología de delitos que más incidencia tiene en Andalucía?<br><br>
+        - ¿Cómo ha evolucionado la criminalidad en Andalucía en los últimos años? <br><br>
         - ¿Han aumentado los delitos contra la libertad sexual?<br><br>
-        - ¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?
-       <br><br>
+      
       </p>
 
     <h2>Dataset</h2>
@@ -129,15 +129,35 @@
       </script>
       
       <br /> <br /> <br /> 
-      Definitivamente, podemos decir que Andalucía no está en la cabecera de este ranking. Con 3717 casos por cada cien mil habitantes se sitúa a mitad de la lista, estando a la cabeza Madrid, Cataluña y Baleares. Vemos que sin necesidad de construir ningún ranking, la mera visualización por color nos ayuda a responder la cuestión planteada.
+      Definitivamente, podemos decir que Andalucía no está en la cabecera de este ranking. Con 3717 casos por cada cien mil habitantes se sitúa a mitad de la lista, estando a la cabeza Madrid, Cataluña y Baleares. <br /> <br /> 
+      Vemos que sin necesidad de construir ningún ranking, la mera visualización por color nos ayuda a responder la cuestión planteada.
 
       <br /><br />
 
-      <h2>¿Cuál es la tipología de delitos que más incidencia tiene?</h2>
+      <h2>¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?</h2>
+      
+      <br />
+
+      Cabría preguntarse si alguna tasa como el PIB per cápita está correlacionado con la criminalidad. La forma más apropiada de responder a esta pregunta mediante una visualización es con un diagrama de puntos. De nuevo, Datawrapper permite hacerlo de forma muy sencilla. <br /><br /> 
+
+      Si graficamos la tasa de delitos por cada 1000 habitantes, que para Andalucía se sitúa en alrededor de 37 delitos, frente al PIB per cápita de cada región, obtenemos:
+      <br /> <br /> <br />
+
+      <iframe title="Delitos por cada 1000 hab. vs PIB per Cápita - 2021" aria-label="Scatter Plot" id="datawrapper-chart-ifEl5" src="https://datawrapper.dwcdn.net/ifEl5/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+      </script>
+
+      <br /><br /><br />
+
+      Vemos que no se detecta una correlación lineal entre ambas tasas, regiones como Extremadura o Melilla con PIB per cápita similares a los de Andalucía, tienen tasas de criminalidad en sendos extremos. <br />
+      <br />Lo mismo se puede decir de Cataluña, Navarra y Aragón, con PIB per cápita en la zona media-alta, tienen unas tasas de criminalidad por cada 1000 habitantes muy dispares.
+
+      <br /><br />
+
+      <h2>¿Cuál es la tipología de delitos que más incidencia tiene en Andalucía?</h2>
 
       <br />
 
-      Analicemos cuáles son los delitos más frecuentes en Andalucía.  <br />
+      Analicemos cuáles son los delitos más frecuentes en Andalucía.  <br /><br />
       
       Esta clase de información categórica es apropiado mostrarla en gráficos de barras. En esta ocasión, usando Python y la librería Matplotlib podemos hacer uso de la versatibilidad que ofrece para graficar datos a nuestra conveniencia:
 
@@ -177,22 +197,7 @@
       Podemos decir, que al contrario que en el caso anterior, los delitos contra la libertad sexual tuvieron una tendencia al alza hasta 2019, cayendo drásticamente en 2020 durante el confinamiento, pero para 2021 el crecimiento se retomó de forma muy pronunciada.
       <br /><br />
 
-      <h2>¿Existe alguna relación entre la criminalidad y el producto interior bruto per cápita de cada región?</h2>
       
-      <br />
-
-      Cabría preguntarse si alguna tasa como el PIB per cápita está correlacionado con la criminalidad. La forma más apropiada de responder a esta pregunta mediante una visualización es con un diagrama de puntos. De nuevo, Datawrapper permite hacerlo de forma muy sencilla. <br /><br /> 
-
-      Si graficamos la tasa de delitos por cada 1000 habitantes, que para Andalucía se sitúa en alrededor de 37 delitos, frente al PIB per cápita de cada región, obtenemos:
-      <br /> <br /> <br />
-
-      <iframe title="Delitos por cada 1000 hab. vs PIB per Cápita - 2021" aria-label="Scatter Plot" id="datawrapper-chart-ifEl5" src="https://datawrapper.dwcdn.net/ifEl5/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-      </script>
-
-      <br /><br /><br />
-
-      Vemos que no se detecta una correlación lineal entre ambas tasas, regiones como Extremadura o Melilla con PIB per cápita similares a los de Andalucía, tienen tasas de criminalidad en sendos extremos. Y lo mismo se puede decir de Cataluña, Navarra y Aragón, con PIB per cápita en la zona media-alta, tienen unas tasas de criminalidad por cada 1000 habitantes muy dispares.
-             
   </p>
 
   <br><br>
